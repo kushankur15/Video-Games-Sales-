@@ -1,6 +1,5 @@
 import pandas as pd
 import streamlit as st
-import numpy as np
 import plotly.express as px
 
 filename  = "vgsales.csv"
@@ -65,4 +64,5 @@ fig3 = px.bar(sales_by_genre, x=sales_by_genre.index, y=sales_by_genre.columns, 
 st.plotly_chart(fig3)
 
 st.subheader("Video Game Sales Data")
+
 st.dataframe(filtered_data)
